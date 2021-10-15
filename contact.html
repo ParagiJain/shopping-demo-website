@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+  <!-- Glidejs StyleSheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <title>Shopoholic</title>
+</head>
+
+<body>
+<!-- Header -->
+<header id="home" class="header">
+    <nav class="navigation">
+      <div class="nav-center container">
+        <a href="#home" class="logo">
+          <h1>SHOP<span>O</span>HOLIC</h1>
+        </a>
+
+        <div class="nav-menu">
+          <div class="nav-top">
+            <div class="logo">
+              <h1>COD<span>E</span>VO</h1>
+            </div>
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/product.html" class="nav-link">Products</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/blog.html" class="nav-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-icons">
+          <span><a href="/cart.html" class="nav-link"><i class="fas fa-shopping-basket"></i></a></span>
+        </div>
+
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!-- contact page -->
+<div class="form-body">
+  <form method="post">
+    <h1>Contact Us</h1>
+    <p>Please take a moment to get in touch, we will get back to you shortly.</p>
+  
+    <div class="column">
+      <label for="the-name">Your Name</label>
+      <input type="text" name="name" id="the-name">
+  
+      <label for="the-email">Email Address</label>
+      <input type="email" name="email" id="the-email">
+  
+      <label for="the-phone">Phone Number</label>
+      <input type="tel" name="phone" id="the-phone">
+  
+      <label for="the-reason">How can we help you?</label>
+      <select name="reason" id="the-reason">
+      <option value="">Choose one</option>
+      <option value="web">Product related query</option>
+      <option value="video">Return related query</option>
+      <option value="3d">Other</option>
+    </select>
+    </div>
+    <div class="column">
+      <label for="the-message">Message</label>
+      <textarea name="message" id="the-message"></textarea>
+      <label>
+      <input type="checkbox" name="newsletter" value="yes"> Join our mailing list?
+      </label>
+      <input type="button" style="background-color: rgb(152, 155, 142);" onclick="location.href = '/index.html';" value="Send Message">
+    </div>
+  </form>
+</div>
+<!-- contact page end -->
+
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          <a href="#">Affiliate</a>
+          <a href="#">Specials</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="/contact.html">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">blogletter</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-center">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            134 daffodils place, Brampton Province, Ontario, Canada
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            Rajinder73k@yahoo.com
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            5145731439
+          </div>
+          <div>
+            <span>
+              <i class="far fa-paper-plane"></i>
+            </span>
+            Ontario, Canada
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+  <!-- Glidejs Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="./js/product.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/cart.js"></script>
+</body>
+
+</html>

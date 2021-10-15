@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "title": "women's high heels",
+      "price": "2500.99",
+      "image": "./images/pic1.jpg",
+      "category": "featured"
+    },
+    {
+      "title": "Men's formal Shoes",
+      "price": "3500.99",
+      "image": "./images/pic2.png",
+      "category": "trend"
+    },
+    {
+      "title": "Women Handbag",
+      "price": "900.99",
+      "image": "./images/pic3.png",
+      "category": "featured"
+    },
+    {
+      "title": "Men Casual Shirt",
+      "price": "2000.99",
+      "image": "./images/pic4.png",
+      "category": "trend"
+    },
+    {
+      "title": "Men's trouser",
+      "price": "2000.99",
+      "image": "./images/pic5.png",
+      "category": "featured"
+    },
+    {
+      "title": "Unisex T-Shirt",
+      "price": "800.99",
+      "image": "./images/pic6.png",
+      "category": "recent"
+    },
+    {
+      "title": "Men Casual Shoe",
+      "price": "2000.99",
+      "image": "./images/pic8.png",
+      "category": "trend"
+    },
+    {
+      "title": "Women Dress",
+      "price": "6500.99",
+      "image": "./images/pic7.png",
+      "category": "featured"
+    },
+    {
+      "title": "Men's Formal Coat",
+      "price": "2000.99",
+      "image": "./images/pic8.jpg",
+      "category": "recent"
+    },
+    {
+      "title": "Men Casual Shoe",
+      "price": "2999.99",
+      "image": "./images/pic1.png",
+      "category": "trend"
+    },
+    {
+      "title": "Women Ballies",
+      "price": "1000.99",
+      "image": "./images/pic9.png",
+      "category": "special"
+    },
+    {
+      "title": "Bagpack",
+      "price": "550.99",
+      "image": "./images/pic10.png",
+      "category": "special"
+    },
+    {
+      "title": "Men Casual Shoe",
+      "price": "2000.99",
+      "image": "./images/pic11.png",
+      "category": "special"
+    },
+    {
+      "title": "Orange Bagpack",
+      "price": "500.99",
+      "image": "./images/pic12.png",
+      "category": "recent"
+    },
+    {
+      "title": "Jeans",
+      "price": "3000.99",
+      "image": "./images/pic16.png",
+      "category": "special"
+    },
+    {
+      "title": "Men Casual Shoe",
+      "price": "2000.99",
+      "image": "./images/pic13.png",
+      "category": "latest"
+    },
+    {
+      "title": "Men Casual Shoe",
+      "price": "2500.99",
+      "image": "./images/pic14.png",
+      "category": "recent"
+    },
+    {
+      "title": "Belt",
+      "price": "200.99",
+      "image": "./images/pic17.jpg",
+      "category": "latest"
+    },
+    {
+      "title": "Men Casual Shoe",
+      "price": "2000.99",
+      "image": "./images/pic15.png",
+      "category": "latest"
+    },
+    {
+      "title": "Smart Watch",
+      "price": "5000.99",
+      "image": "./images/pic18.png",
+      "category": "latest"
+    }
+  ]
+}
