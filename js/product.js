@@ -9,10 +9,6 @@ const getProducts = async () => {
 const displayProducts = (products, center) => {
   let display = products.map(
     ({ title, image, price }) => {
-      // const data = document.getElementsByClassName('fa-shopping-basket')
-      // data.addEventListener('click',function(){
-      //   console.log(price)
-      // })
       return `<div class="product">
           <div class="product-header">
             <img src=${image} alt="product" class="product-header-image">
@@ -38,10 +34,6 @@ const displayProducts = (products, center) => {
 const displayCartProducts = (products, center) => {
   let display = products.map(
     ({ title, image, price }) => {
-      // const data = document.getElementsByClassName('fa-shopping-basket')
-      // data.addEventListener('click',function(){
-      //   console.log(price)
-      // })
       return `<div class="product">
           <div class="product-header">
             <img src=${image} alt="product" class="product-header-image">
@@ -64,13 +56,11 @@ const displayCartProducts = (products, center) => {
   center.innerHTML = display;
 };
 function addCart(param){
-  alert("cc")
-  const data={
+     const data={
     "title":param[0],
     "price":param[1],
     "image":param[2]
   }
-  console.log("hii",param)
 }
 
 // Filtering
@@ -123,32 +113,3 @@ window.addEventListener("DOMContentLoaded", async () => {
   displayProducts(products, shopCenter);
   displayCartProducts(defaultProducts,productCenter)
 });
-
-
-
-// Display Product
-// const displayProducts = (products, center) => {
-//   let display = products.map(
-//     ({ title, image, price }) => `<div class="product">
-//           <div class="product-header">
-//             <img src=${image} alt="product">
-//           </div>
-//           <div class="product-footer">
-//             <h3>${title}</h3>
-//             <div class="product-price">
-//               <h4>$${price}</h4>
-//             </div>
-//           </div>
-//           <ul>
-//             <li>
-//               <a href="#">
-//                 <i class="fas fa-shopping-basket"></i>
-//               </a>
-//             </li>
-//           </ul>
-//         </div>`
-//   );
-
-//   display = display.join("");
-//   center.innerHTML = display;
-// };

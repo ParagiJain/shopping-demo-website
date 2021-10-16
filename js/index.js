@@ -54,14 +54,6 @@ links.map((link) => {
   });
 });
 
-// preloader
-// window.addEventListener("load", () => {
-//   const loader = document.getElementById("pre-loader");
-//   setTimeout(() => {
-//     loader.classList.add("hide");
-//   }, 2000);
-// });
-
 // PopUp
 const popup = document.querySelector(".popup");
 const closePopup = document.querySelector(".popup-close");
