@@ -73,30 +73,21 @@ img {
   }
 }
 
-#pre-loader {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  z-index: 999999;
-  background-color: var(--white);
-  transition: all 300ms ease-in-out;
-}
-
-.loader {
-  height: 100vh;
-  width: 100vw;
-  background: url("./images/loader.svg") center/30rem no-repeat fixed;
-}
-
-#pre-loader.hide {
-  opacity: 0;
-  pointer-events: none;
-}
-
 @media only screen and (max-width: 567px) {
   .loader {
     background-size: 20rem;
   }
+}
+
+.row{
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text-heading{
+  font-size: 8rem;
 }
 
 /* Header */
@@ -1196,82 +1187,6 @@ Facility Media Query
   }
 }
 
-/* ======= Popup ======== */
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 999999;
-  transition: 0.3s;
-  transform: scale(0.2);
-  opacity: 0;
-  visibility: hidden;
-}
-
-.popup.show {
-  transform: scale(1);
-  opacity: 1;
-  visibility: visible;
-}
-
-.popup-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 90%;
-  margin: 0 auto;
-  height: 55rem;
-  transform: translate(-50%, -50%);
-  padding: 1.6rem;
-  display: table;
-  overflow: hidden;
-  background-color: var(--white);
-}
-
-.popup-close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  padding: 1.5rem 1.7rem;
-  background-color: var(--grey-alt);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.popup-left {
-  display: table-cell;
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.popup-right {
-  display: table-cell;
-  width: 100%;
-  vertical-align: middle;
-  padding: 3rem 5rem;
-}
-
-.popup-img {
-  width: 100%;
-  overflow: hidden;
-}
-
-.popup-img img {
-  display: block;
-  width: 60rem;
-  height: 45rem;
-  max-width: 100%;
-  border-radius: 1rem;
-  object-fit: cover;
-  margin: 0 auto;
-}
 
 .right-content {
   text-align: center;
@@ -1295,19 +1210,6 @@ Facility Media Query
   margin-bottom: 1.6rem;
 }
 
-.popup-form {
-  width: 100%;
-  padding: 2rem 0;
-  text-indent: 1rem;
-  margin-bottom: 1.6rem;
-  border-radius: 3rem;
-  background-color: var(--grey-alt);
-  border: none;
-}
-
-.popup-form:focus {
-  outline: none;
-}
 
 .right-content a:link,
 .right-content a:visited {
@@ -1353,19 +1255,33 @@ Facility Media Query
 }
 
 @media only screen and (max-width: 768px) {
+
+  .row{
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .row img{
+    width: 80%;
+  }
+  .row h1{
+    font-size: 5rem !important;
+  }
+  .row p{
+    font-size: 3rem !important
+  }
+  .row div{
+    /* width: 80%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .right-content h1 {
     font-size: 4rem;
   }
 
   .right-content p {
     font-size: 1.6rem;
-  }
-
-  .popup-form {
-    width: 90%;
-    margin: 0 auto;
-    padding: 1.8rem 0;
-    margin-bottom: 1.5rem;
   }
 }
 
@@ -1374,16 +1290,7 @@ Facility Media Query
     display: flex !important;
     align-items: center;
   }
-  .popup-right {
-    padding: 0 1.6rem;
-  }
-
-  .popup-content {
-    height: 40rem;
-    width: 90%;
-    margin: 0 auto;
-  }
-
+  
   .right-content {
     width: 100%;
   }
@@ -1396,22 +1303,11 @@ Facility Media Query
     font-size: 1.4rem;
   }
 
-  .popup-form {
-    width: 100%;
-    padding: 1.5rem 0;
-    margin-bottom: 1.3rem;
-  }
-
   .right-content a:link,
   .right-content a:visited {
     padding: 1.5rem 3rem;
   }
 
-  .popup-close {
-    top: 1rem;
-    right: 1rem;
-    padding: 1.3rem;
-  }
 }
 
 /* ========= Footer ======== */
