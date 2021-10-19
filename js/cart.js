@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function (event) {
   // put your javascript code here
   setTimeout(function () {
@@ -7,23 +6,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   function ready() {
     var addToCartButtons = document.getElementsByClassName('addTocart')
-    for (var i = 0; i < addToCartButtons.length; i++) {
-      var button = addToCartButtons[i]
-      button.addEventListener('click', addToCartClicked)
-    }
+    setTimeout(function () {
+      for (var i = 0; i < addToCartButtons.length; i++) {
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClicked)
+      }
+    }, 1000);
     var removeCartItemButtons = document.getElementsByClassName('del-button')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
       var button = removeCartItemButtons[i]
       button.addEventListener('click', removeCartItem)
     }
-
   }
 });
 
 
 
 function addToCartClicked(event) {
-  console.log("ckl")
   var button = event.target
   var product = button.parentElement.parentElement.parentElement
   var title = product.getElementsByTagName('h3')[0].innerHTML
@@ -34,7 +33,6 @@ function addToCartClicked(event) {
 
 var arr = []
 function addItemToCart(title, price, imageSrc) {
-  console.log("addtocart")
   var newItem = {
     "title": title,
     "price": price,
