@@ -55,11 +55,11 @@ const displayCartProducts = (products, center) => {
   display = display.join("");
   center.innerHTML = display;
 };
-function addCart(param){
-     const data={
-    "title":param[0],
-    "price":param[1],
-    "image":param[2]
+function addCart(param) {
+  const data = {
+    "title": param[0],
+    "price": param[1],
+    "image": param[2]
   }
 }
 
@@ -111,5 +111,5 @@ window.addEventListener("DOMContentLoaded", async () => {
   displayProducts(latestProducts, latestCenter);
   displayProducts(recentProducts, recentCenter);
   displayProducts(products, shopCenter);
-  displayCartProducts(defaultProducts,productCenter)
+  displayCartProducts(defaultProducts, productCenter)
 });
